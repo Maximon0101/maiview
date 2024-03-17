@@ -1,11 +1,29 @@
-from flask import Flask, send_from_directory
+from flask import Flask, send_from_directory, render_template
 
 app = Flask(__name__)
 
 
-@app.route('/<path:path>')
+@app.route('/<path:path>')  # for all static content
 def send_static(path):
     return send_from_directory('static', path)
+
+
+@app.route('/')
+@app.route('/index.htm')
+@app.route('/index.html')
+@app.route('/schedule')
+def schedule():
+    return render_template('schedule.html')
+
+
+@app.route('/info')
+def info():
+    return render_template('info.html')
+
+
+@app.route('/settings')
+def settings():
+    return render_template('settings.html')
 
 
 @app.after_request

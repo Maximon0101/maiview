@@ -6,6 +6,8 @@
 
     background: var(--primary);
     color: var(--onPrimary);
+
+    cursor: pointer;
 }
 
 .button-text {

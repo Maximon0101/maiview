@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a99204c-9e20-4d1c-bfa2-a2332f03e904" name="Changes" comment="overflow trouble solved">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/alignment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/colors-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/columns.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/fragments/bottomNavigation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/fragments/buttons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/fragments/pageTitle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/fragments/scheduleView.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/rows.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/spacers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/maiview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/maiview.iml" afterDir="false" />
+    <list default="true" id="0a99204c-9e20-4d1c-bfa2-a2332f03e904" name="Changes" comment="Top and navigation bars done">
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/settings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/schedule.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +55,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Documents\Internet\maiview\templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="maiview" type="Python.FlaskServer">
       <module name="maiview" />
@@ -97,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710690013218</updated>
       <workItem from="1710690029320" duration="3060000" />
-      <workItem from="1710693155148" duration="11537000" />
+      <workItem from="1710693155148" duration="14153000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -115,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710698965638</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Top and navigation bars done">
+      <option name="closed" value="true" />
+      <created>1710705689735</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710705689735</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,9 +140,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="overflow trouble solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="overflow trouble solved" />
+    <MESSAGE value="Top and navigation bars done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Top and navigation bars done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/maiview$maiview.coverage" NAME="maiview Coverage Results" MODIFIED="1710698746910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/maiview$maiview.coverage" NAME="maiview Coverage Results" MODIFIED="1710707983492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

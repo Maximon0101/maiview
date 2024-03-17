@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+    <div id="pageTitle" class="row row-center row-space-between">
+        <div class="column">
+            <div id="titleText">Настройки</div>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <div id="scheduleView"></div>
+    <div id="bottomNavigation">
+        <div class="row row-center row-space-around fill-max-size">
+            <a href="/info"><div class="button button-navigation" id="navigationButtonInfo"><i class="fa-solid fa-circle-info"></i></div></a>
+            <a href="/schedule"><div class="button button-navigation" id="navigationButtonSchedule"><i class="fa-regular fa-calendar"></i></div></a>
+            <a href="/settings"><div class="button button-navigation button-navigation-selected" id="navigationButtonSettings"><i class="fa-solid fa-gear"></i></div></a>
+        </div>
+    </div>
+{% endblock %}
