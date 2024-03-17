@@ -1,6 +1,7 @@
 html {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -8,25 +9,44 @@ body {
     --onBackground: #e2e2e5;
     --onBackground80: #e2e2e5CC;
 
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0;
+    padding: 0 0;
+    overflow: hidden;
     background: var(--background);
+    color: var(--onBackground);
+}
+
+.row {
+    width: 100%;
+    margin: 0 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.separator {
+    margin: 0 10%;
+    width: 80%;
+    border-bottom: 1px solid var(--onBackground80);
 }
 
 #pageTitle {
-    margin: 0 10%;
-    width: 80%;
     height: 12em;
-    border-bottom: 0.5px solid var(--onBackground80);
 }
 
 #scheduleView {
     width: 100%;
-    height: calc(100% - 24em);
+    height: calc(100% - 24em - 1px);
 }
 
 #bottomNavigation {
     width: 100%;
     height: 12em;
     background: #232a32;
+}
+
+#titleText {
+    font-size: 5em;
 }
