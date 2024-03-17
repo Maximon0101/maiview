@@ -1,0 +1,33 @@
+.button {
+    padding: 0.5em 1em;
+    border-radius: 1.75em;
+    font-size: 2.5em;
+    transition: all 0.3s;
+
+    background: var(--primary);
+    color: var(--onPrimary);
+}
+
+.button-text {
+    background: transparent;
+    color: var(--primary);
+}
+
+.button-text:hover {
+    background: var(--primary10)!important;
+}
+
+
+.button-navigation {
+    padding: 0.5em 1.5em;
+    background: transparent;
+    color: var(--secondary);
+}
+
+.button-navigation:hover {
+    background: var(--secondary20)!important;
+}
+
+.button-navigation-selected {
+    background: var(--secondary10)!important;
+}
