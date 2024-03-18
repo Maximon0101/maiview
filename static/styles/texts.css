@@ -22,3 +22,7 @@
 
     color: var(--onSecondaryContainer);
 }
+
+.lessonLocation {
+    color: var(--onBackground);
+}

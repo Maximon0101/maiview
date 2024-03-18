@@ -41,3 +41,12 @@ body {
     background: var(--tertiary);
     color: var(--onTertiary);
 }
+
+.chip {
+    padding: 0.5em 0.75em;
+
+    font-size: 2.3em;
+
+    border: 1px solid var(--onSecondaryContainer);
+    border-radius: 0.5em;
+}

@@ -10,41 +10,59 @@
     </div>
     <div class="separator"></div>
     <div id="scheduleView">
-    {% for day in schedule.days %}
-        <div class="scheduleDay column">
-            <div class="row row-start row-baseline">
-                <div class="titleText" id="scheduleDayName">{{ day.day }}</div>
-                <div class="spacer_2em"></div>
-                <div class="onBackground60Text" id="scheduleDayDate">{{ day.date.day }} {{ day.date.month }}</div>
-            </div>
-            <div class="spacer_1em"></div>
-            {% for lesson in day.lessons %}
-            <div class="card lessonView">
-                <div class="row">
-                    <div class="column"><div class="numberCircle"><div id="lessonNumber">{{ lesson.number }}</div></div></div>
+        {% for day in schedule.days %}
+            <div class="scheduleDay column">
+                <div class="row row-start row-baseline">
+                    <div class="titleText" id="scheduleDayName">{{ day.day }}</div>
                     <div class="spacer_2em"></div>
-                    <div class="column">
-                        <div class="lessonName">{{ lesson.name }}</div>
-                        <div class="spacer_1_5em"></div>
-                        {% for lector in lesson.lectors %}
-                        <div class="lessonInfo">{{ lector.name }}</div>
-                        <div class="spacer_1em"></div>
-                        {% endfor %}
-                        <div class="lessonInfo">{{ lesson.time_start.time }} - {{ lesson.time_end.time }}</div>
-                        <div class="spacer_1em"></div>
-                    </div>
+                    <div class="onBackground60Text" id="scheduleDayDate">{{ day.date.day }} {{ day.date.month }}</div>
                 </div>
+                <div class="spacer_1em"></div>
+                {% for lesson in day.lessons %}
+                    <div class="card lessonView">
+                        <div class="row">
+                            <div class="column">
+                                <div class="numberCircle">
+                                    <div id="lessonNumber">{{ lesson.number }}</div>
+                                </div>
+                            </div>
+                            <div class="spacer_2em"></div>
+                            <div class="column">
+                                <div class="lessonName">{{ lesson.name }}</div>
+                                <div class="spacer_1_5em"></div>
+                                {% for lector in lesson.lectors %}
+                                    <div class="lessonInfo">{{ lector.name }}</div>
+                                    <div class="spacer_1em"></div>
+                                {% endfor %}
+                                <div class="lessonInfo">{{ lesson.time_start.time }} - {{ lesson.time_end.time }}</div>
+                                <div class="spacer_1em"></div>
+                            </div>
+                        </div>
+                        <div class="spacer_2em"></div>
+                        <div class="row row-center row-space-between">
+                            <div class="lessonInfo lessonLocation">{{ lesson.rooms }}</div>
+                            <div class="chip lessonType">{{ lesson.type }}</div>
+                        </div>
+                    </div>
+                    <div class="spacer_1em"></div>
+                {% endfor %}
             </div>
-            <div class="spacer_1em"></div>
-            {% endfor %}
-        </div>
-    {% endfor %}
+        {% endfor %}
     </div>
     <div id="bottomNavigation">
         <div class="row row-center row-space-around fill-max-size">
-            <a href="/info"><div class="button button-navigation" id="navigationButtonInfo"><i class="fa-solid fa-circle-info"></i></div></a>
-            <a href="/schedule"><div class="button button-navigation button-navigation-selected" id="navigationButtonSchedule"><i class="fa-regular fa-calendar"></i></div></a>
-            <a href="/settings"><div class="button button-navigation" id="navigationButtonSettings"><i class="fa-solid fa-gear"></i></div></a>
+            <a href="/info">
+                <div class="button button-navigation" id="navigationButtonInfo"><i class="fa-solid fa-circle-info"></i>
+                </div>
+            </a>
+            <a href="/schedule">
+                <div class="button button-navigation button-navigation-selected" id="navigationButtonSchedule"><i
+                        class="fa-regular fa-calendar"></i></div>
+            </a>
+            <a href="/settings">
+                <div class="button button-navigation" id="navigationButtonSettings"><i class="fa-solid fa-gear"></i>
+                </div>
+            </a>
         </div>
     </div>
 {% endblock %}

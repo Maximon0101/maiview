@@ -23,4 +23,5 @@ def prepareLesson(lesson: dict):
     lesson['time_end']['time'] = lesson['time_end']['time'][:-3]
     lesson['number'] = lessonStartTimeList.index(lesson['time_start']['time']) + 1
     lesson['type'] = lessonTypeList[lesson['type']]
+    lesson['rooms'] = ' / '.join(list(map(lambda x: x['name'], lesson['rooms'])))
     return lesson
