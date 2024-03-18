@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import json
 import prepareData
 from flask import Flask, send_from_directory, render_template
