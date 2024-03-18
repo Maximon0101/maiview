@@ -7,5 +7,18 @@
 }
 
 #lessonNumber {
-    margin-top: 0.17em;
+    margin-top: 0.155em;
+}
+
+.lessonName {
+    font-size: 2.8em;
+
+    color: var(--onBackground);
+}
+
+.lessonInfo {
+    font-size: 2.25em;
+    font-weight: 300;
+
+    color: var(--onSecondaryContainer);
 }

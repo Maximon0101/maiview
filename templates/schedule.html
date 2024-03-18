@@ -21,10 +21,21 @@
             {% for lesson in day.lessons %}
             <div class="card lessonView">
                 <div class="row">
-                    <div class="numberCircle"><div id="lessonNumber">{{ lesson.number }}</div></div>
-
+                    <div class="column"><div class="numberCircle"><div id="lessonNumber">{{ lesson.number }}</div></div></div>
+                    <div class="spacer_2em"></div>
+                    <div class="column">
+                        <div class="lessonName">{{ lesson.name }}</div>
+                        <div class="spacer_1_5em"></div>
+                        {% for lector in lesson.lectors %}
+                        <div class="lessonInfo">{{ lector.name }}</div>
+                        <div class="spacer_1em"></div>
+                        {% endfor %}
+                        <div class="lessonInfo">{{ lesson.time_start.time }} - {{ lesson.time_end.time }}</div>
+                        <div class="spacer_1em"></div>
+                    </div>
                 </div>
             </div>
+            <div class="spacer_1em"></div>
             {% endfor %}
         </div>
     {% endfor %}

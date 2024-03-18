@@ -2,6 +2,10 @@
     width: 1em;
     height: 1em;
 }
+.spacer_1_5em {
+    width: 1.5em;
+    height: 1.5em;
+}
 
 .spacer_2em {
     width: 2em;
