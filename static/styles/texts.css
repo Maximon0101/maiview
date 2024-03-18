@@ -3,6 +3,9 @@
 }
 
 .onBackground60Text {
-
     color: var(--onBackground60);
+}
+
+#lessonNumber {
+    margin-top: 0.17em;
 }

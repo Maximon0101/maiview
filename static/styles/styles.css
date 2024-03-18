@@ -25,3 +25,19 @@ body {
     border-bottom: 1px solid var(--onBackground80);
 }
 
+.lessonView {
+    margin: 1em;
+}
+
+.numberCircle {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+
+    font-size: 3em;
+    text-align: center;
+
+
+    background: var(--tertiary);
+    color: var(--onTertiary);
+}

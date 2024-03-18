@@ -17,6 +17,10 @@ def prepareDayOfWeek(day: str):
     return days[day]
 
 def prepareLesson(lesson: dict):
+    lessonStartTimeList = ['9:00', '10:45', '13:00', '14:45', '16:30', '18:15', '20:00']
+    lessonTypeList = {'ЛК': 'ЛЕКЦИЯ', 'ПЗ': 'СЕМИНАР', 'ЛР': 'ЛАБОРАТОРНАЯ', 'Экзамен': 'ЭКЗАМЕН'}
     lesson['time_start']['time'] = lesson['time_start']['time'][:-3]
     lesson['time_end']['time'] = lesson['time_end']['time'][:-3]
+    lesson['number'] = lessonStartTimeList.index(lesson['time_start']['time']) + 1
+    lesson['type'] = lessonTypeList[lesson['type']]
     return lesson

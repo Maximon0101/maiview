@@ -1,5 +1,5 @@
 .scheduleDay {
-    width: 100%;
+    width: calc(100% - 4em);
     margin: 2em 2em;
 }
 #scheduleDayDate {
@@ -7,8 +7,9 @@
     font-weight: 300;
 }
 
-
 #scheduleView {
     width: 100%;
     height: calc(100% - 22em - 1px);
+
+    overflow: scroll;
 }

@@ -1,0 +1,5 @@
+.card {
+    background: var(--secondaryContainer);
+    border-radius: 1em;
+    padding: 2em;
+}
