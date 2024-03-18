@@ -1,6 +1,10 @@
+import json
+import prepareData
 from flask import Flask, send_from_directory, render_template
 
 app = Flask(__name__)
+
+schedule_ = '{"name":"М4О-106Б-23","created":1710692662,"cached":0,"days":[{"date":{"year":2024,"month":2,"day":29},"day":"Пт","lessons":[{"name":"Математический анализ","time_start":{"time":"12:15:00"},"time_end":{"time":"12:15:00"},"lectors":[{"name":"Данилина Ирина Александровна","uid":"4e16fbff-aa98-11e6-8e0c-003048dec27f"}],"rooms":[{"name":"ГУК В-228","uid":"4e16fbff-aa98-11e6-8e0c-003048dec27f"}],"lms":"reserved","teams":"reserved","other":"reserved"}]}]}'
 
 
 @app.route('/<path:path>')  # for all static content
@@ -13,7 +17,11 @@ def send_static(path):
 @app.route('/index.html')
 @app.route('/schedule')
 def schedule():
-    return render_template('schedule.html')
+    schedule = json.loads(schedule_)
+    schedule["days"] = list(map(prepareData.prepareScheduleDay, schedule["days"]))
+    print(schedule["days"][0])
+    return render_template('schedule.html',
+                           schedule=schedule)
 
 
 @app.route('/info')

@@ -2,14 +2,22 @@
 {% block body %}
     <div id="pageTitle" class="row row-center row-space-between">
         <div class="column">
-            <div id="titleText">Расписание</div>
+            <div class="titleText">Расписание</div>
             <div class="spacer_1em"></div>
-            <div id="groupName">М4О-106Б-23</div>
+            <div id="groupName">{{ schedule.name }}</div>
         </div>
         <div class="button button-text" id="weekSelectButton">Выбор недели</div>
     </div>
     <div class="separator"></div>
-    <div id="scheduleView"></div>
+    <div id="scheduleView">
+        <div class="scheduleDay column">
+            <div class="row row-start row-baseline">
+                <div class="titleText" id="scheduleDayName">123</div>
+                <div class="spacer_2em"></div>
+                <div class="onBackground60Text" id="scheduleDayDate"></div>
+            </div>
+        </div>
+    </div>
     <div id="bottomNavigation">
         <div class="row row-center row-space-around fill-max-size">
             <a href="/info"><div class="button button-navigation" id="navigationButtonInfo"><i class="fa-solid fa-circle-info"></i></div></a>
