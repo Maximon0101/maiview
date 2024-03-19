@@ -16,6 +16,9 @@ body {
     color: var(--onBackground);
 
     font-family: "Roboto", sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 
