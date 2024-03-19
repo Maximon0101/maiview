@@ -7,6 +7,10 @@
     background: var(--primary);
     color: var(--onPrimary);
 
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
     cursor: pointer;
 }
 
