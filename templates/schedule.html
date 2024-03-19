@@ -12,7 +12,7 @@
     <div id="scheduleView">
         {% for day in schedule.days %}
             <div class="scheduleDay column">
-                <div class="row row-start row-baseline">
+                <div class="row row-start row-baseline row-sticky-top">
                     <div class="titleText" id="scheduleDayName">{{ day.day }}</div>
                     <div class="spacer_2em"></div>
                     <div class="onBackground60Text" id="scheduleDayDate">{{ day.date.day }} {{ day.date.month }}</div>

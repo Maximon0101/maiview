@@ -21,3 +21,7 @@
     width: 8em;
     height: 8em;
 }
+
+.spacer-with-background {
+    background: var(--background);
+}

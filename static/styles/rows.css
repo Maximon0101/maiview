@@ -22,3 +22,11 @@
 .row-space-around {
     justify-content: space-around;
 }
+
+.row-sticky-top {
+    position: sticky;
+    top: -1px;
+    padding: 1em 0;
+
+    background: var(--background);
+}
