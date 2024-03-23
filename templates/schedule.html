@@ -8,7 +8,7 @@
         </div>
         <div class="button button-text" id="weekSelectButton">Выбор недели</div>
     </div>
-    <div id="scheduleView">
+    <div id="bodyView" class="scroll">
     <div class="separator"></div>
         {% for day in schedule.days %}
             <div class="scheduleDay column">
@@ -19,7 +19,7 @@
                 </div>
                 <div class="spacer_1em"></div>
                 {% for lesson in day.lessons %}
-                    <div class="card lessonView">
+                    <div class="card cardMainView">
                         <div class="row">
                             <div class="column">
                                 <div class="numberCircle">

@@ -29,7 +29,7 @@ body {
     border-bottom: 1px solid var(--onSurface);
 }
 
-.lessonView {
+.cardMainView {
     margin: 1em;
 }
 
@@ -53,4 +53,8 @@ body {
 
     border: 1px solid var(--onSecondaryContainer);
     border-radius: 0.5em;
+}
+
+.scroll {
+    overflow-y: scroll;
 }

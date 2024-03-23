@@ -7,9 +7,7 @@
     font-weight: 300;
 }
 
-#scheduleView {
+#bodyView {
     width: 100%;
     height: calc(100% - 22em - 1px);
-
-    overflow-y: scroll;
 }
